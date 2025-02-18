@@ -1,0 +1,19 @@
+[Fri Feb 14 13:04:25.671197 2025] [fcgid:warn] [pid 19196:tid 1264] [client 127.0.0.1:59382] mod_fcgid: read timeout from pipe
+[Fri Feb 14 13:04:25.671197 2025] [core:error] [pid 19196:tid 1264] [client 127.0.0.1:59382] End of script output before headers: admin-ajax.php
+[Fri Feb 14 13:05:16.774719 2025] [fcgid:warn] [pid 19196:tid 1248] [client 127.0.0.1:59693] mod_fcgid: read timeout from pipe
+[Fri Feb 14 13:05:16.774719 2025] [core:error] [pid 19196:tid 1248] [client 127.0.0.1:59693] End of script output before headers: admin-ajax.php
+[Fri Feb 14 13:58:26.999321 2025] [fcgid:warn] [pid 17784:tid 1204] [client 127.0.0.1:58319] mod_fcgid: read timeout from pipe
+[Fri Feb 14 13:58:27.001322 2025] [core:error] [pid 17784:tid 1204] [client 127.0.0.1:58319] End of script output before headers: admin-ajax.php
+[Mon Feb 17 10:45:53.621156 2025] [fcgid:warn] [pid 9244:tid 1184] [client 127.0.0.1:64761] mod_fcgid: read timeout from pipe
+[Mon Feb 17 10:45:53.624157 2025] [core:error] [pid 9244:tid 1184] [client 127.0.0.1:64761] End of script output before headers: wp-cron.php
+[Mon Feb 17 11:09:26.473772 2025] [fcgid:warn] [pid 9244:tid 1276] [client 127.0.0.1:49992] mod_fcgid: read timeout from pipe
+[Mon Feb 17 11:09:26.473772 2025] [core:error] [pid 9244:tid 1276] [client 127.0.0.1:49992] End of script output before headers: admin-ajax.php
+[Mon Feb 17 13:44:24.733668 2025] [fcgid:warn] [pid 9244:tid 1216] (OS 10054)Une connexion existante a dû être fermée par l’hôte distant.  : [client 127.0.0.1:58199] mod_fcgid: ap_pass_brigade failed in handle_request_ipc function, referer: https://la-vie-des-plantes-2.local/wp-admin/plugin-install.php?s=%2520WooLentor&tab=search&type=term
+[Tue Feb 18 12:52:51.803767 2025] [fcgid:warn] [pid 9044:tid 1176] (OS 109)Le canal de communication a été fermé.  : [client 127.0.0.1:58451] mod_fcgid: get overlap result error, referer: https://la-vie-des-plantes-2.local/wp-admin/post.php?post=83&action=elementor
+[Tue Feb 18 12:52:51.805762 2025] [core:error] [pid 9044:tid 1176] [client 127.0.0.1:58451] End of script output before headers: index.php, referer: https://la-vie-des-plantes-2.local/wp-admin/post.php?post=83&action=elementor
+[Tue Feb 18 12:52:51.851907 2025] [fcgid:warn] [pid 9044:tid 1048] (OS 109)Le canal de communication a été fermé.  : [client 127.0.0.1:58503] mod_fcgid: get overlap result error, referer: https://la-vie-des-plantes-2.local/wp-admin/admin.php?page=wc-admin&path=%2Fpayments%2Fconnect&source=wcadmin-payment-task&from=WPCOM_CONNECTION
+[Tue Feb 18 12:52:51.851907 2025] [core:error] [pid 9044:tid 1048] [client 127.0.0.1:58503] End of script output before headers: admin-ajax.php, referer: https://la-vie-des-plantes-2.local/wp-admin/admin.php?page=wc-admin&path=%2Fpayments%2Fconnect&source=wcadmin-payment-task&from=WPCOM_CONNECTION
+[Tue Feb 18 12:52:51.862925 2025] [fcgid:warn] [pid 9044:tid 928] (OS 109)Le canal de communication a été fermé.  : [client 127.0.0.1:58470] mod_fcgid: get overlap result error
+[Tue Feb 18 12:52:51.862925 2025] [core:error] [pid 9044:tid 928] [client 127.0.0.1:58470] End of script output before headers: wp-cron.php
+[Tue Feb 18 12:52:51.865455 2025] [fcgid:warn] [pid 9044:tid 820] (OS 109)Le canal de communication a été fermé.  : [client 127.0.0.1:58452] mod_fcgid: get overlap result error, referer: https://la-vie-des-plantes-2.local/wp-admin/post.php?post=83&action=elementor
+[Tue Feb 18 12:52:51.865455 2025] [core:error] [pid 9044:tid 820] [client 127.0.0.1:58452] End of script output before headers: admin-ajax.php, referer: https://la-vie-des-plantes-2.local/wp-admin/post.php?post=83&action=elementor
