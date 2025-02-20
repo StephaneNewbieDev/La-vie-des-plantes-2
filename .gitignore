@@ -1,3 +1,10 @@
 "wp-config.php" 
 "wp-content/uploads" 
 "node_modules/" 
+# Exclure les fichiers sensibles
+wp-config.php
+wp-content/cache/
+wp-content/backup/
+node_modules/
+*.log
+.env

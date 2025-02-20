@@ -1,0 +1,9 @@
+# Exclure les fichiers sensibles et inutiles
+wp-config.php
+wp-content/cache/
+wp-content/backup/
+node_modules/
+*.log
+.env
+.DS_Store
+
