@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - WooCommerce - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2025-02-12 21:29:31+0000\n"
+"PO-Revision-Date: 2025-02-23 13:37:22+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -9886,11 +9886,6 @@ msgid_plural "%s reviews"
 msgstr[0] "%s avis"
 msgstr[1] "%s avis"
 
-#. translators: %s: Star rating (1-5).
-#: src/Internal/Admin/ProductReviews/ReviewsListTable.php:1389
-msgid "%s-star rating"
-msgstr "Évaluation %s étoiles"
-
 #: src/Internal/Admin/ProductReviews/ReviewsListTable.php:1380
 msgid "Filter by review rating"
 msgstr "Filtrer par note de l’avis"
@@ -10190,6 +10185,11 @@ msgstr "%1$s %2$d"
 #: src/Internal/Admin/ProductReviews/ReviewsListTable.php:1120
 msgid "g:i a"
 msgstr "G\\hi"
+
+#. translators: %s: Star rating (1-5).
+#: src/Internal/Admin/ProductReviews/ReviewsListTable.php:1389
+msgid "%s-star rating"
+msgstr "Évaluation %s étoile(s)"
 
 #: src/Admin/API/Reports/Customers/Controller.php:506
 msgid "Limit result to items with specified user ids."
@@ -12017,11 +12017,6 @@ msgctxt "block description"
 msgid "Ensure that customers agree to your Terms & Conditions and Privacy Policy."
 msgstr "Veillez à ce que les clients acceptent vos conditions d’utilisation et votre politique de confidentialité."
 
-#: assets/client/blocks/inner-blocks/checkout-terms-block/block.json
-msgctxt "block title"
-msgid "Terms and Conditions"
-msgstr "Conditions d’utilisation"
-
 #: assets/client/blocks/inner-blocks/checkout-shipping-methods-block/block.json
 msgctxt "block title"
 msgid "Shipping Options"
@@ -12113,6 +12108,11 @@ msgstr "Actions"
 msgctxt "block title"
 msgid "Proceed to Checkout"
 msgstr "Valider la commande"
+
+#: assets/client/blocks/inner-blocks/checkout-terms-block/block.json
+msgctxt "block title"
+msgid "Terms and Conditions"
+msgstr "Conditions générales"
 
 #: assets/client/blocks/inner-blocks/filled-cart-block/block.json
 msgctxt "block title"
@@ -29781,6 +29781,16 @@ msgstr "Limiter le jeu de résultats aux commandes affectées à un produit spé
 msgid "Term name."
 msgstr "Nom du terme."
 
+#: includes/rest-api/Controllers/Version1/class-wc-rest-product-attribute-terms-v1-controller.php:210
+#: includes/rest-api/Controllers/Version1/class-wc-rest-product-attributes-v1-controller.php:501
+#: includes/rest-api/Controllers/Version1/class-wc-rest-product-categories-v1-controller.php:188
+#: includes/rest-api/Controllers/Version1/class-wc-rest-product-shipping-classes-v1-controller.php:108
+#: includes/rest-api/Controllers/Version1/class-wc-rest-product-tags-v1-controller.php:108
+#: includes/rest-api/Controllers/Version2/class-wc-rest-product-categories-v2-controller.php:117
+#: includes/rest-api/Controllers/Version3/class-wc-rest-product-categories-controller.php:117
+msgid "An alphanumeric identifier for the resource unique to its type."
+msgstr "Un identifiant alphanumérique pour la ressource unique en son genre."
+
 #: includes/rest-api/Controllers/Version1/class-wc-rest-product-attribute-terms-v1-controller.php:231
 #: includes/rest-api/Controllers/Version1/class-wc-rest-product-categories-v1-controller.php:261
 #: includes/rest-api/Controllers/Version1/class-wc-rest-product-shipping-classes-v1-controller.php:124
@@ -29820,16 +29830,6 @@ msgstr "Nom de la catégorie."
 #: includes/rest-api/Controllers/Version3/class-wc-rest-product-categories-controller.php:130
 msgid "HTML description of the resource."
 msgstr "Description HTML de la ressource."
-
-#: includes/rest-api/Controllers/Version1/class-wc-rest-product-attribute-terms-v1-controller.php:210
-#: includes/rest-api/Controllers/Version1/class-wc-rest-product-attributes-v1-controller.php:501
-#: includes/rest-api/Controllers/Version1/class-wc-rest-product-categories-v1-controller.php:188
-#: includes/rest-api/Controllers/Version1/class-wc-rest-product-shipping-classes-v1-controller.php:108
-#: includes/rest-api/Controllers/Version1/class-wc-rest-product-tags-v1-controller.php:108
-#: includes/rest-api/Controllers/Version2/class-wc-rest-product-categories-v2-controller.php:117
-#: includes/rest-api/Controllers/Version3/class-wc-rest-product-categories-controller.php:117
-msgid "An alphanumeric identifier for the resource unique to its type."
-msgstr "Un identifiant alphanumérique pour la ressource unique en son genre."
 
 #: includes/rest-api/Controllers/Version1/class-wc-rest-product-categories-v1-controller.php:209
 #: includes/rest-api/Controllers/Version2/class-wc-rest-product-categories-v2-controller.php:138
@@ -30307,6 +30307,18 @@ msgstr "Ligne de sous-total (avant remises)."
 msgid "Line item meta data."
 msgstr "Ligne de données de méta de l&rsquo;article."
 
+#: includes/rest-api/Controllers/Version1/class-wc-rest-order-refunds-v1-controller.php:522
+#: includes/rest-api/Controllers/Version1/class-wc-rest-orders-v1-controller.php:1677
+#: includes/rest-api/Controllers/Version2/class-wc-rest-orders-v2-controller.php:2060
+msgid "Number of decimal points to use in each resource."
+msgstr "Nombre de décimales à utiliser dans chaque ressource."
+
+#: includes/rest-api/Controllers/Version1/class-wc-rest-orders-v1-controller.php:539
+#: includes/rest-api/Controllers/Version2/class-wc-rest-orders-v2-controller.php:798
+#: includes/rest-api/Controllers/Version3/class-wc-rest-orders-controller.php:262
+msgid "Customer ID is invalid."
+msgstr "L&rsquo;ID client est non valide."
+
 #: includes/rest-api/Controllers/Version1/class-wc-rest-order-refunds-v1-controller.php:434
 #: includes/rest-api/Controllers/Version1/class-wc-rest-orders-v1-controller.php:1326
 #: includes/rest-api/Controllers/Version1/class-wc-rest-orders-v1-controller.php:1473
@@ -30367,18 +30379,6 @@ msgstr "Clé de la méta."
 #: src/StoreApi/Schemas/V1/CartShippingRateSchema.php:199
 msgid "Meta value."
 msgstr "Valeur de la méta."
-
-#: includes/rest-api/Controllers/Version1/class-wc-rest-order-refunds-v1-controller.php:522
-#: includes/rest-api/Controllers/Version1/class-wc-rest-orders-v1-controller.php:1677
-#: includes/rest-api/Controllers/Version2/class-wc-rest-orders-v2-controller.php:2060
-msgid "Number of decimal points to use in each resource."
-msgstr "Nombre de décimales à utiliser dans chaque ressource."
-
-#: includes/rest-api/Controllers/Version1/class-wc-rest-orders-v1-controller.php:539
-#: includes/rest-api/Controllers/Version2/class-wc-rest-orders-v2-controller.php:798
-#: includes/rest-api/Controllers/Version3/class-wc-rest-orders-controller.php:262
-msgid "Customer ID is invalid."
-msgstr "L&rsquo;ID client est non valide."
 
 #: includes/rest-api/Controllers/Version1/class-wc-rest-orders-v1-controller.php:723
 #: includes/rest-api/Controllers/Version2/class-wc-rest-orders-v2-controller.php:995
@@ -30961,6 +30961,20 @@ msgstr "Horodatage invalide."
 msgid "Invalid nonce - nonce has already been used."
 msgstr "Nonce invalide - Le nonce a déjà été utilisé."
 
+#: includes/rest-api/Controllers/Version1/class-wc-rest-coupons-v1-controller.php:110
+#: includes/rest-api/Controllers/Version1/class-wc-rest-orders-v1-controller.php:105
+#: includes/rest-api/Controllers/Version1/class-wc-rest-product-reviews-v1-controller.php:118
+#: includes/rest-api/Controllers/Version1/class-wc-rest-products-v1-controller.php:104
+#: includes/rest-api/Controllers/Version2/class-wc-rest-coupons-v2-controller.php:104
+#: includes/rest-api/Controllers/Version2/class-wc-rest-orders-v2-controller.php:119
+#: includes/rest-api/Controllers/Version2/class-wc-rest-product-variations-v2-controller.php:109
+#: includes/rest-api/Controllers/Version2/class-wc-rest-products-v2-controller.php:117
+#: includes/rest-api/Controllers/Version2/class-wc-rest-shipping-zone-methods-v2-controller.php:87
+#: includes/rest-api/Controllers/Version2/class-wc-rest-shipping-zones-v2-controller.php:77
+#: includes/rest-api/Controllers/Version3/class-wc-rest-product-reviews-controller.php:110
+msgid "Whether to bypass trash and force deletion."
+msgstr "Si la corbeille doit être contournée et la suppression forcée."
+
 #: includes/rest-api/Controllers/Version1/class-wc-rest-coupons-v1-controller.php:256
 #: includes/rest-api/Controllers/Version2/class-wc-rest-coupons-v2-controller.php:275
 msgid "The coupon code cannot be empty."
@@ -30985,20 +30999,6 @@ msgstr "Code promo."
 #: includes/rest-api/Controllers/Version2/class-wc-rest-coupons-v2-controller.php:360
 msgid "The date the coupon was created, in the site's timezone."
 msgstr "La date à laquelle le code promo a été créé, en fuseau horaire du site."
-
-#: includes/rest-api/Controllers/Version1/class-wc-rest-coupons-v1-controller.php:110
-#: includes/rest-api/Controllers/Version1/class-wc-rest-orders-v1-controller.php:105
-#: includes/rest-api/Controllers/Version1/class-wc-rest-product-reviews-v1-controller.php:118
-#: includes/rest-api/Controllers/Version1/class-wc-rest-products-v1-controller.php:104
-#: includes/rest-api/Controllers/Version2/class-wc-rest-coupons-v2-controller.php:104
-#: includes/rest-api/Controllers/Version2/class-wc-rest-orders-v2-controller.php:119
-#: includes/rest-api/Controllers/Version2/class-wc-rest-product-variations-v2-controller.php:109
-#: includes/rest-api/Controllers/Version2/class-wc-rest-products-v2-controller.php:117
-#: includes/rest-api/Controllers/Version2/class-wc-rest-shipping-zone-methods-v2-controller.php:87
-#: includes/rest-api/Controllers/Version2/class-wc-rest-shipping-zones-v2-controller.php:77
-#: includes/rest-api/Controllers/Version3/class-wc-rest-product-reviews-controller.php:110
-msgid "Whether to bypass trash and force deletion."
-msgstr "Si la corbeille doit être contournée et la suppression forcée."
 
 #: includes/rest-api/Controllers/Version1/class-wc-rest-coupons-v1-controller.php:435
 #: includes/rest-api/Controllers/Version2/class-wc-rest-coupons-v2-controller.php:372
@@ -31084,6 +31084,24 @@ msgstr "Impossible de créer la ressource existante."
 msgid "Invalid resource id."
 msgstr "Identifiant de ressource non valide."
 
+#: includes/rest-api/Controllers/Version1/class-wc-rest-customers-v1-controller.php:524
+msgid "Customers do not support trashing."
+msgstr "Les clients ne supportent pas la suppression."
+
+#: includes/rest-api/Controllers/Version1/class-wc-rest-customers-v1-controller.php:534
+msgid "Invalid resource id for reassignment."
+msgstr "Identifiant de ressource non valide pour la réaffectation."
+
+#: includes/rest-api/Controllers/Version2/class-wc-rest-customers-v2-controller.php:162
+#: includes/rest-api/Controllers/Version3/class-wc-rest-customers-controller.php:58
+msgid "The date the customer was created, in the site's timezone."
+msgstr "La date à laquelle le client a été créé, en fuseau horaire du site."
+
+#: includes/rest-api/Controllers/Version2/class-wc-rest-customers-v2-controller.php:174
+#: includes/rest-api/Controllers/Version3/class-wc-rest-customers-controller.php:70
+msgid "The date the customer was last modified, in the site's timezone."
+msgstr "La date à laquelle le client a été modifié, en fuseau horaire du site."
+
 #: includes/rest-api/Controllers/Version1/class-wc-rest-customer-downloads-v1-controller.php:224
 #: includes/rest-api/Controllers/Version1/class-wc-rest-products-v1-controller.php:1892
 #: includes/rest-api/Controllers/Version1/class-wc-rest-products-v1-controller.php:2369
@@ -31107,14 +31125,6 @@ msgstr "Nom du fichier."
 #: src/Admin/API/Reports/Downloads/Controller.php:177
 msgid "File URL."
 msgstr "URL du fichier."
-
-#: includes/rest-api/Controllers/Version1/class-wc-rest-customers-v1-controller.php:524
-msgid "Customers do not support trashing."
-msgstr "Les clients ne supportent pas la suppression."
-
-#: includes/rest-api/Controllers/Version1/class-wc-rest-customers-v1-controller.php:534
-msgid "Invalid resource id for reassignment."
-msgstr "Identifiant de ressource non valide pour la réaffectation."
 
 #: includes/rest-api/Controllers/Version1/class-wc-rest-coupons-v1-controller.php:84
 #: includes/rest-api/Controllers/Version1/class-wc-rest-customer-downloads-v1-controller.php:46
@@ -31185,16 +31195,6 @@ msgstr "Identifiant de ressource non valide pour la réaffectation."
 msgid "Unique identifier for the resource."
 msgstr "Identifiant unique pour la ressource."
 
-#: includes/rest-api/Controllers/Version2/class-wc-rest-customers-v2-controller.php:162
-#: includes/rest-api/Controllers/Version3/class-wc-rest-customers-controller.php:58
-msgid "The date the customer was created, in the site's timezone."
-msgstr "La date à laquelle le client a été créé, en fuseau horaire du site."
-
-#: includes/rest-api/Controllers/Version2/class-wc-rest-customers-v2-controller.php:174
-#: includes/rest-api/Controllers/Version3/class-wc-rest-customers-controller.php:70
-msgid "The date the customer was last modified, in the site's timezone."
-msgstr "La date à laquelle le client a été modifié, en fuseau horaire du site."
-
 #: includes/rest-api/Controllers/Version1/class-wc-rest-customers-v1-controller.php:714
 #: includes/rest-api/Controllers/Version2/class-wc-rest-customers-v2-controller.php:192
 #: includes/rest-api/Controllers/Version3/class-wc-rest-customers-controller.php:88
@@ -31262,6 +31262,19 @@ msgstr "Liste de données de l&rsquo;adresse de facturation."
 msgid "First name."
 msgstr "Prénom."
 
+#: includes/rest-api/Controllers/Version1/class-wc-rest-customers-v1-controller.php:791
+#: includes/rest-api/Controllers/Version1/class-wc-rest-customers-v1-controller.php:854
+#: includes/rest-api/Controllers/Version1/class-wc-rest-orders-v1-controller.php:1094
+#: includes/rest-api/Controllers/Version1/class-wc-rest-orders-v1-controller.php:1157
+#: includes/rest-api/Controllers/Version2/class-wc-rest-customers-v2-controller.php:237
+#: includes/rest-api/Controllers/Version2/class-wc-rest-customers-v2-controller.php:300
+#: includes/rest-api/Controllers/Version2/class-wc-rest-orders-v2-controller.php:1282
+#: includes/rest-api/Controllers/Version2/class-wc-rest-orders-v2-controller.php:1345
+#: includes/rest-api/Controllers/Version3/class-wc-rest-customers-controller.php:133
+#: includes/rest-api/Controllers/Version3/class-wc-rest-customers-controller.php:196
+msgid "Last name."
+msgstr "Nom."
+
 #: includes/rest-api/Controllers/Version1/class-wc-rest-customers-v1-controller.php:801
 #: includes/rest-api/Controllers/Version1/class-wc-rest-customers-v1-controller.php:864
 #: includes/rest-api/Controllers/Version1/class-wc-rest-orders-v1-controller.php:1104
@@ -31293,19 +31306,6 @@ msgstr "Code ISO du pays."
 #: includes/rest-api/Controllers/Version3/class-wc-rest-customers-controller.php:236
 msgid "Phone number."
 msgstr "Numéro de téléphone"
-
-#: includes/rest-api/Controllers/Version1/class-wc-rest-customers-v1-controller.php:791
-#: includes/rest-api/Controllers/Version1/class-wc-rest-customers-v1-controller.php:854
-#: includes/rest-api/Controllers/Version1/class-wc-rest-orders-v1-controller.php:1094
-#: includes/rest-api/Controllers/Version1/class-wc-rest-orders-v1-controller.php:1157
-#: includes/rest-api/Controllers/Version2/class-wc-rest-customers-v2-controller.php:237
-#: includes/rest-api/Controllers/Version2/class-wc-rest-customers-v2-controller.php:300
-#: includes/rest-api/Controllers/Version2/class-wc-rest-orders-v2-controller.php:1282
-#: includes/rest-api/Controllers/Version2/class-wc-rest-orders-v2-controller.php:1345
-#: includes/rest-api/Controllers/Version3/class-wc-rest-customers-controller.php:133
-#: includes/rest-api/Controllers/Version3/class-wc-rest-customers-controller.php:196
-msgid "Last name."
-msgstr "Nom."
 
 #: includes/rest-api/Controllers/Version1/class-wc-rest-customers-v1-controller.php:796
 #: includes/rest-api/Controllers/Version1/class-wc-rest-customers-v1-controller.php:859
@@ -32038,6 +32038,20 @@ msgstr "Accepte les paiements par PayPal en utilisant le solde du compte ou la c
 msgid "Sorry, you cannot list resources."
 msgstr "Désolé, vous ne pouvez pas lister les ressources."
 
+#: includes/rest-api/Controllers/Version1/class-wc-rest-customers-v1-controller.php:168
+#: includes/rest-api/Controllers/Version1/class-wc-rest-order-notes-v1-controller.php:136
+#: includes/rest-api/Controllers/Version1/class-wc-rest-product-reviews-v1-controller.php:167
+#: includes/rest-api/Controllers/Version1/class-wc-rest-tax-classes-v1-controller.php:111
+#: includes/rest-api/Controllers/Version1/class-wc-rest-taxes-v1-controller.php:139
+#: includes/rest-api/Controllers/Version1/class-wc-rest-webhooks-v1-controller.php:160
+#: includes/rest-api/Controllers/Version3/class-wc-rest-posts-controller.php:71
+#: includes/rest-api/Controllers/Version3/class-wc-rest-product-reviews-controller.php:172
+#: includes/rest-api/Controllers/Version3/class-wc-rest-shipping-zones-controller-base.php:83
+#: includes/rest-api/Controllers/Version3/class-wc-rest-terms-controller.php:161
+#: src/Admin/API/OnboardingTasks.php:247
+msgid "Sorry, you are not allowed to create resources."
+msgstr "Désolé, vous n&rsquo;êtes pas autorisé à créer des ressources."
+
 #. translators: %s: post type
 #: includes/rest-api/Controllers/Version1/class-wc-rest-products-v1-controller.php:1658
 #: includes/rest-api/Controllers/Version2/class-wc-rest-product-variations-v2-controller.php:565
@@ -32064,31 +32078,6 @@ msgstr "%s ne supporte pas la mise à la corbeille."
 #: includes/rest-api/Controllers/Version3/class-wc-rest-posts-controller.php:457
 msgid "The %s has already been deleted."
 msgstr "Ce %s a déjà été supprimé."
-
-#. translators: %s: post type
-#: includes/rest-api/Controllers/Version1/class-wc-rest-order-notes-v1-controller.php:316
-#: includes/rest-api/Controllers/Version1/class-wc-rest-products-v1-controller.php:1707
-#: includes/rest-api/Controllers/Version1/class-wc-rest-webhooks-v1-controller.php:485
-#: includes/rest-api/Controllers/Version2/class-wc-rest-product-variations-v2-controller.php:608
-#: includes/rest-api/Controllers/Version2/class-wc-rest-products-v2-controller.php:1661
-#: includes/rest-api/Controllers/Version3/class-wc-rest-crud-controller.php:509
-#: includes/rest-api/Controllers/Version3/class-wc-rest-posts-controller.php:467
-msgid "The %s cannot be deleted."
-msgstr "Le %s ne peut être supprimé."
-
-#: includes/rest-api/Controllers/Version1/class-wc-rest-customers-v1-controller.php:168
-#: includes/rest-api/Controllers/Version1/class-wc-rest-order-notes-v1-controller.php:136
-#: includes/rest-api/Controllers/Version1/class-wc-rest-product-reviews-v1-controller.php:167
-#: includes/rest-api/Controllers/Version1/class-wc-rest-tax-classes-v1-controller.php:111
-#: includes/rest-api/Controllers/Version1/class-wc-rest-taxes-v1-controller.php:139
-#: includes/rest-api/Controllers/Version1/class-wc-rest-webhooks-v1-controller.php:160
-#: includes/rest-api/Controllers/Version3/class-wc-rest-posts-controller.php:71
-#: includes/rest-api/Controllers/Version3/class-wc-rest-product-reviews-controller.php:172
-#: includes/rest-api/Controllers/Version3/class-wc-rest-shipping-zones-controller-base.php:83
-#: includes/rest-api/Controllers/Version3/class-wc-rest-terms-controller.php:161
-#: src/Admin/API/OnboardingTasks.php:247
-msgid "Sorry, you are not allowed to create resources."
-msgstr "Désolé, vous n&rsquo;êtes pas autorisé à créer des ressources."
 
 #: includes/rest-api/Controllers/Version1/class-wc-rest-customers-v1-controller.php:184
 #: includes/rest-api/Controllers/Version1/class-wc-rest-order-notes-v1-controller.php:152
@@ -32140,6 +32129,30 @@ msgstr "Désolé, vous n&rsquo;êtes pas autorisé à modifier cette ressource."
 msgid "Sorry, you are not allowed to delete this resource."
 msgstr "Désolé, vous n&rsquo;êtes pas autorisé à supprimer cette ressource."
 
+#. translators: %s: post type
+#: includes/rest-api/Controllers/Version1/class-wc-rest-coupons-v1-controller.php:313
+#: includes/rest-api/Controllers/Version1/class-wc-rest-order-notes-v1-controller.php:220
+#: includes/rest-api/Controllers/Version1/class-wc-rest-order-refunds-v1-controller.php:281
+#: includes/rest-api/Controllers/Version1/class-wc-rest-orders-v1-controller.php:834
+#: includes/rest-api/Controllers/Version1/class-wc-rest-products-v1-controller.php:741
+#: includes/rest-api/Controllers/Version1/class-wc-rest-webhooks-v1-controller.php:333
+#: includes/rest-api/Controllers/Version3/class-wc-rest-crud-controller.php:202
+#: includes/rest-api/Controllers/Version3/class-wc-rest-order-notes-controller.php:73
+#: includes/rest-api/Controllers/Version3/class-wc-rest-posts-controller.php:175
+msgid "Cannot create existing %s."
+msgstr "Impossible de créer le %s existant."
+
+#. translators: %s: post type
+#: includes/rest-api/Controllers/Version1/class-wc-rest-order-notes-v1-controller.php:316
+#: includes/rest-api/Controllers/Version1/class-wc-rest-products-v1-controller.php:1707
+#: includes/rest-api/Controllers/Version1/class-wc-rest-webhooks-v1-controller.php:485
+#: includes/rest-api/Controllers/Version2/class-wc-rest-product-variations-v2-controller.php:608
+#: includes/rest-api/Controllers/Version2/class-wc-rest-products-v2-controller.php:1661
+#: includes/rest-api/Controllers/Version3/class-wc-rest-crud-controller.php:509
+#: includes/rest-api/Controllers/Version3/class-wc-rest-posts-controller.php:467
+msgid "The %s cannot be deleted."
+msgstr "Le %s ne peut être supprimé."
+
 #: includes/rest-api/Controllers/Version1/class-wc-rest-webhooks-v1-controller.php:714
 #: includes/rest-api/Controllers/Version3/class-wc-rest-crud-controller.php:596
 #: includes/rest-api/Controllers/Version3/class-wc-rest-posts-controller.php:624
@@ -32168,19 +32181,6 @@ msgstr "Limiter les réponses aux ressources publiées avant une certaine date c
 #: src/StoreApi/Routes/V1/Products.php:200
 msgid "Limit result set to specific ids."
 msgstr "Limiter le jeu de résultats aux identifiants spécifiques."
-
-#. translators: %s: post type
-#: includes/rest-api/Controllers/Version1/class-wc-rest-coupons-v1-controller.php:313
-#: includes/rest-api/Controllers/Version1/class-wc-rest-order-notes-v1-controller.php:220
-#: includes/rest-api/Controllers/Version1/class-wc-rest-order-refunds-v1-controller.php:281
-#: includes/rest-api/Controllers/Version1/class-wc-rest-orders-v1-controller.php:834
-#: includes/rest-api/Controllers/Version1/class-wc-rest-products-v1-controller.php:741
-#: includes/rest-api/Controllers/Version1/class-wc-rest-webhooks-v1-controller.php:333
-#: includes/rest-api/Controllers/Version3/class-wc-rest-crud-controller.php:202
-#: includes/rest-api/Controllers/Version3/class-wc-rest-order-notes-controller.php:73
-#: includes/rest-api/Controllers/Version3/class-wc-rest-posts-controller.php:175
-msgid "Cannot create existing %s."
-msgstr "Impossible de créer le %s existant."
 
 #: includes/rest-api/Controllers/Version1/class-wc-rest-customers-v1-controller.php:941
 #: includes/rest-api/Controllers/Version1/class-wc-rest-taxes-v1-controller.php:733
@@ -34187,6 +34187,18 @@ msgstr "BIC / Swift"
 msgid "Remove selected account(s)"
 msgstr "Supprimer les comptes sélectionnés"
 
+#: includes/gateways/bacs/class-wc-gateway-bacs.php:359
+msgid "BIC"
+msgstr "BIC"
+
+#: includes/gateways/bacs/class-wc-gateway-bacs.php:404
+msgid "Awaiting BACS payment"
+msgstr "En attente de paiement BACS"
+
+#: includes/gateways/bacs/class-wc-gateway-bacs.php:435
+msgid "BSB"
+msgstr "BSB"
+
 #: includes/admin/importers/mappings/generic.php:21
 #: includes/admin/settings/views/html-admin-page-shipping-zone-methods.php:81
 #: includes/gateways/bacs/class-wc-gateway-bacs.php:104
@@ -34210,18 +34222,6 @@ msgstr "Supprimer les comptes sélectionnés"
 #: assets/client/blocks/wc-shipping-method-pickup-location.js:83
 msgid "Title"
 msgstr "Titre"
-
-#: includes/gateways/bacs/class-wc-gateway-bacs.php:359
-msgid "BIC"
-msgstr "BIC"
-
-#: includes/gateways/bacs/class-wc-gateway-bacs.php:404
-msgid "Awaiting BACS payment"
-msgstr "En attente de paiement BACS"
-
-#: includes/gateways/bacs/class-wc-gateway-bacs.php:435
-msgid "BSB"
-msgstr "BSB"
 
 #: includes/gateways/bacs/class-wc-gateway-bacs.php:445
 msgid "IFSC"
@@ -36114,10 +36114,6 @@ msgstr "URL des développeurs du thème parent."
 msgid "Displays whether or not the current active theme declares WooCommerce support."
 msgstr "Indique si le thème actuellement actif gère le support de WooCommerce."
 
-#: includes/admin/views/html-admin-page-status-report.php:1019
-msgid "Templates"
-msgstr "Modèles HTML"
-
 #: includes/admin/views/html-admin-page-status.php:13
 #: includes/react-admin/connect-existing-pages.php:45
 #: assets/client/admin/chunks/8656.js:1
@@ -36538,6 +36534,10 @@ msgstr "Journaux"
 #: assets/client/blocks/order-confirmation-shipping-address.js:1
 msgid "Placeholder"
 msgstr "Texte indicatif"
+
+#: includes/admin/views/html-admin-page-status-report.php:1019
+msgid "Templates"
+msgstr "Modèles"
 
 #: includes/admin/settings/class-wc-settings-general.php:208
 msgid "Coupons can be applied from the cart and checkout pages."

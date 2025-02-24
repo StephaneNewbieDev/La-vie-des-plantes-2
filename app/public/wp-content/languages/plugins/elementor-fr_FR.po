@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Elementor Website Builder &#8211; More Than Just a Page Builder - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2025-02-10 19:33:38+0000\n"
+"PO-Revision-Date: 2025-02-23 14:05:52+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -1828,7 +1828,7 @@ msgstr "Onglets. Ouvrez des éléments avec Entrer ou Espace, fermez-les avec Ec
 #. translators: %s: Post type (e.g. Page, Post, etc.)
 #: core/document-types/page-base.php:186
 #: assets/js/packages/editor-site-navigation/editor-site-navigation.js:2
-#: assets/js/packages/editor-site-navigation/editor-site-navigation.strings.js:13
+#: assets/js/packages/editor-site-navigation/editor-site-navigation.strings.js:17
 msgid "View %s"
 msgstr "Voir %s"
 
@@ -4733,10 +4733,6 @@ msgstr "Échelle de notation"
 msgid "Rating"
 msgstr "Notation"
 
-#: includes/widgets/star-rating.php:45 includes/widgets/star-rating.php:122
-msgid "Star Rating"
-msgstr "Notation par étoiles"
-
 #: includes/widgets/image.php:163 includes/widgets/image.php:175
 msgid "Custom Caption"
 msgstr "Légende personnalisée"
@@ -4793,7 +4789,7 @@ msgstr "Tableau de bord"
 
 #: core/common/modules/finder/categories/site.php:46
 #: assets/js/packages/editor-site-navigation/editor-site-navigation.js:2
-#: assets/js/packages/editor-site-navigation/editor-site-navigation.strings.js:26
+#: assets/js/packages/editor-site-navigation/editor-site-navigation.strings.js:12
 msgid "Homepage"
 msgstr "Page d’accueil"
 
@@ -4849,6 +4845,10 @@ msgstr "Afficher/Masquer le panneau"
 #: includes/widgets/image-gallery.php:175 includes/widgets/image.php:162
 msgid "Attachment Caption"
 msgstr "Légende du fichier joint"
+
+#: includes/widgets/star-rating.php:45 includes/widgets/star-rating.php:122
+msgid "Star Rating"
+msgstr "Évaluation par étoiles"
 
 #: includes/widgets/video.php:610
 msgid "Poster"
@@ -5515,7 +5515,7 @@ msgstr "Retirer"
 #: includes/editor-templates/repeater.php:18 assets/js/editor.js:29977
 #: assets/js/editor.js:50587
 #: assets/js/packages/editor-site-navigation/editor-site-navigation.js:2
-#: assets/js/packages/editor-site-navigation/editor-site-navigation.strings.js:16
+#: assets/js/packages/editor-site-navigation/editor-site-navigation.strings.js:20
 msgid "Duplicate"
 msgstr "Dupliquer"
 
@@ -7670,8 +7670,8 @@ msgstr "Large"
 #: assets/js/editor.js:27617 assets/js/editor.js:30069
 #: assets/js/editor.js:46992 assets/js/import-export-admin.js:272
 #: assets/js/packages/editor-site-navigation/editor-site-navigation.js:2
-#: assets/js/packages/editor-site-navigation/editor-site-navigation.strings.js:17
-#: assets/js/packages/editor-site-navigation/editor-site-navigation.strings.js:25
+#: assets/js/packages/editor-site-navigation/editor-site-navigation.strings.js:21
+#: assets/js/packages/editor-site-navigation/editor-site-navigation.strings.js:29
 msgid "Delete"
 msgstr "Effacer"
 
@@ -8943,11 +8943,6 @@ msgstr "Titre"
 msgid "Divider"
 msgstr "Séparateur"
 
-#: includes/widgets/toggle.php:46 includes/widgets/toggle.php:123
-#: includes/widgets/toggle.php:276
-msgid "Toggle"
-msgstr "Va-et-vient"
-
 #: includes/widgets/toggle.php:173
 msgid "Toggle #1"
 msgstr "Va-et-vient #1"
@@ -9112,3 +9107,8 @@ msgstr "Aller au tableau de bord"
 #: includes/elements/section.php:283 includes/widgets/text-editor.php:175
 msgid "Columns Gap"
 msgstr "Écart entre les colonnes"
+
+#: includes/widgets/toggle.php:46 includes/widgets/toggle.php:123
+#: includes/widgets/toggle.php:276
+msgid "Toggle"
+msgstr "Ouvrir/fermer"

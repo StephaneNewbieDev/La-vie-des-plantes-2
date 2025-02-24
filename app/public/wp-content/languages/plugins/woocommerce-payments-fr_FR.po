@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2025-02-05 09:54:03+0000\n"
+"PO-Revision-Date: 2025-02-19 22:54:03+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -144,7 +144,7 @@ msgstr ""
 
 #: includes/class-wc-payments-order-success-page.php:119
 msgid "•••"
-msgstr ""
+msgstr "•••"
 
 #: client/overview/modal/progressive-onboarding-eligibility/index.tsx:83
 #: client/overview/task-list/strings.tsx:132
@@ -1001,6 +1001,10 @@ msgstr "Version actuelle de l’extension %s."
 msgid "The payment cannot be captured for completed or processed orders."
 msgstr "Impossible de saisir le paiement des commandes terminées ou traitées."
 
+#: client/data/files/resolvers.ts:26
+msgid "Error retrieving file."
+msgstr "Erreur lors de la récupération du fichier."
+
 #: includes/wc-payment-api/class-wc-payments-api-client.php:1114
 msgid "Onboarding field data could not be retrieved"
 msgstr "Les données du champ d’intégration n’ont pas pu être récupérées"
@@ -1086,6 +1090,30 @@ msgstr "Si Stripe Billing est activé."
 #: client/overview/task-list/tasks/update-business-details-task.tsx:109
 msgid "Finish setting up %s"
 msgstr "Terminer la configuration de %s"
+
+#: client/disputes/strings.ts:77
+msgid "The cardholder claims this is an unauthorized transaction."
+msgstr "Le titulaire de la carte prétend que cette transaction n’est pas autorisée."
+
+#: client/disputes/strings.ts:58
+msgid "The cardholder claims this is a duplicate transaction."
+msgstr "Le titulaire de la carte prétend que cette transaction est un doublon."
+
+#: client/disputes/strings.ts:32
+msgid "The cardholder claims a credit was not processed."
+msgstr "Le titulaire de la carte prétend que ce crédit n’a pas été traité."
+
+#: client/disputes/strings.ts:150
+msgid "The cardholder claims a subscription was canceled."
+msgstr "Le titulaire de la carte prétend que cet abonnement a été annulé."
+
+#: client/disputes/strings.ts:131
+msgid "The cardholder claims the product was unacceptable."
+msgstr "Le titulaire de la carte prétend que ce produit n’était pas acceptable."
+
+#: client/disputes/strings.ts:110
+msgid "The cardholder claims the product was not received."
+msgstr "Le titulaire de la carte prétend ne pas avoir reçu ce produit."
 
 #: src/Internal/Payment/PaymentRequest.php:145
 msgid "No valid payment method was selected."
@@ -1627,10 +1655,18 @@ msgstr "American Express"
 msgid "<title>Type</title> <rule /> <filter />"
 msgstr "<title>Type</title> <rule /> <filter />"
 
+#: client/disputes/filters/config.ts:88
+msgid "Disputes match <select /> filters"
+msgstr "Les litiges correspondent à {{select /}} filtres"
+
 #: client/documents/filters/config.ts:53
 #: client/transactions/filters/config.ts:123
 msgid "<title>Date</title> <rule /> <filter />"
 msgstr "<title>Date</title> <rule /> <filter />"
+
+#: client/disputes/strings.ts:156
+msgid "If you can not prove the customer’s subscription was canceled, and or they did not follow your cancellation policy, you should accept the dispute. You cannot issue a refund while a payment is being disputed. The credit card networks place liability for accepting disputed payments with you, the business."
+msgstr "Si vous ne pouvez pas prouver que l’abonnement du client était annulé et/ou qu’il n’a pas suivi votre politique d’annulation, vous devez accepter le litige. Vous ne pouvez pas émettre de remboursement lorsqu’un paiement est contesté. Les réseaux de cartes de crédit assument la responsabilité d’accepter les paiements litigieux avec vous, l’entreprise."
 
 #. translators: %1$s: WooCommerce , %2$s: WooPayments, %3$s: The current
 #. WooCommerce version used by the store
@@ -2740,6 +2776,10 @@ msgstr "Désolé, vous n’avez pas l’autorisation de faire cela."
 msgid "Loan repayment"
 msgstr "Remboursement de prêt"
 
+#: client/data/capital/resolvers.ts:37
+msgid "Error retrieving the active loan summary."
+msgstr "Erreur lors de la récupération du résumé du prêt en cours."
+
 #: client/components/active-loan-summary/index.tsx:86
 msgid "First paydown"
 msgstr "Premier versement"
@@ -2827,6 +2867,34 @@ msgstr "Mode sans échec activé"
 #: woocommerce-payments.php:306
 msgid "Safe Mode"
 msgstr "Mode sans échec"
+
+#: client/disputes/filters/config.ts:99
+msgid "Select a dispute date"
+msgstr "Sélectionner une date de litige"
+
+#: client/disputes/filters/config.ts:94
+msgid "Select a dispute date filter match"
+msgstr "Sélectionner une correspondance de filtre date de litige"
+
+#: client/disputes/filters/config.ts:93
+msgid "Remove dispute date filter"
+msgstr "Supprimer le filtre date de litige"
+
+#: client/disputes/filters/config.ts:92
+msgid "Disputed on date"
+msgstr "Date du litige"
+
+#: client/disputes/filters/config.ts:87
+msgid "Disputes match {{select /}} filters"
+msgstr "Les litiges correspondent à {{select /}} filtres"
+
+#: client/disputes/filters/config.ts:70
+msgid "All disputes"
+msgstr "Tous les litiges"
+
+#: client/disputes/filters/config.ts:27
+msgid "Dispute currency"
+msgstr "Devise du litige"
 
 #: client/disputes/filters/config.ts:128
 msgid "Select a dispute status"
@@ -3132,7 +3200,7 @@ msgstr "Êtes-vous sûr ?"
 
 #: includes/class-wc-payment-gateway-wcpay.php:1588
 msgid "Credit / Debit Card"
-msgstr "Carte de crédit/débit"
+msgstr ""
 
 #: includes/admin/class-wc-rest-payments-orders-controller.php:153
 #: includes/admin/class-wc-rest-payments-orders-controller.php:287
@@ -3795,6 +3863,7 @@ msgstr "Filtres avancés"
 msgid "Show"
 msgstr "Afficher"
 
+#: client/disputes/filters/config.ts:45
 #: client/transactions/filters/config.ts:69
 msgid "All currencies"
 msgstr "Toutes les devises"
@@ -3844,6 +3913,30 @@ msgstr "ID"
 msgid "Payment method"
 msgstr "Moyen de paiement"
 
+#: client/disputes/strings.ts:55
+msgid "If there have been two or more separate payments, you should get in touch with your customer. If you understand what their complaint is, there is a chance for you to explain the misunderstanding or to make it right. If you’re able to resolve the issue with your customer, you can ask that they withdraw the dispute."
+msgstr "S’il y a eu deux paiements séparés ou plus, vous devez contacter votre client. Si vous comprenez sa plainte, vous avez la possibilité d’expliquer le malentendu ou de le corriger. Si vous êtes en mesure de résoudre le problème avec votre client, vous pouvez lui demander de retirer le litige."
+
+#: client/disputes/strings.ts:54
+msgid "If they were not, collect any and all information documenting that each payment was made separately, such as copies of receipts. If the receipts don’t include the items purchased, be sure to include an itemized list. Each receipt should clearly indicate that the payments are for separate purchases of items or services. If you’ve been able to get in touch with the customer you should be sure to address any concerns they had in your evidence."
+msgstr "Si ce n’est pas le cas, recueillez toutes les informations attestant que chaque paiement a été effectué séparément, comme des copies de reçus. Si les reçus ne comportent pas les articles achetés, veillez à inclure une liste détaillée. Chaque reçu doit clairement indiquer que les paiements concernent des achats séparés d’articles ou de services. Si vous avez pu contacter le client, vous devez veiller à répondre à toutes les inquiétudes qu’il avait porté à votre connaissance."
+
+#: client/disputes/strings.ts:53
+msgid "Determine if your customer was incorrectly charged multiple times."
+msgstr "Déterminez si votre client a été facturé plusieurs fois par erreur."
+
+#: client/disputes/strings.ts:50
+msgid "Demonstrate that each payment was for a separate product or service."
+msgstr "Prouvez que chaque paiement concernait un produit ou un service séparé."
+
+#: client/disputes/strings.ts:47
+msgid "The customer claims they were charged multiple times for the same product or service."
+msgstr "Le client affirme avoir été facturé plusieurs fois pour le même produit ou service."
+
+#: client/disputes/strings.ts:44
+msgid "If there were duplicate payments, you should accept the dispute. You cannot issue a refund while a payment is being disputed. The credit card networks place liability for accepting disputed payments with you, the business."
+msgstr "S’il y a eu des paiements en double, vous devez accepter le litige. Vous ne pouvez pas émettre de remboursement lorsqu’un paiement est contesté. Les réseaux de cartes de crédit assument la responsabilité d’accepter les paiements litigieux avec vous, l’entreprise."
+
 #: client/disputes/strings.ts:41
 msgid "Duplicate"
 msgstr "Dupliquer"
@@ -3856,13 +3949,105 @@ msgstr "Débit non autorisé"
 msgid "Customer initiated"
 msgstr "Initié par le client"
 
+#: client/disputes/strings.ts:30
+msgid "If the cardholder agrees to withdraw the dispute, you should still submit evidence for the dispute using the forms on the next screen. In addition to the following evidence, your submission should include correspondence with the cardholder saying they would withdraw the dispute and a written statement from their card issuer confirming that the dispute has been withdrawn."
+msgstr "Si le titulaire de la carte accepte de retirer le litige, vous devez toujours fournir des preuves du litige en utilisant les formulaires sur l’écran suivant. En plus des preuves suivantes, votre envoi doit inclure vos échanges avec le titulaire de la carte indiquant qu’il va retirer le litige ainsi qu’une déclaration écrite de l’émetteur de sa carte confirmant que le litige a été retiré."
+
+#: client/disputes/strings.ts:29
+msgid "You should first get in touch with your customer. If you understand what their complaint is, there is a chance for you to explain the misunderstanding or to make it right. If you’re able to resolve the issue with your customer, you can ask that they withdraw the dispute."
+msgstr "Vous devez d’abord contacter votre client. Si vous comprenez sa plainte, vous avez la possibilité d’expliquer le malentendu ou de le corriger. Si vous êtes en mesure de résoudre le problème avec votre client, vous pouvez lui demander de retirer le litige."
+
+#: client/disputes/strings.ts:26
+msgid "Demonstrate that you have refunded your customer through other means or that your customer is not entitled to a refund. You cannot issue a refund while a payment is being disputed. If you believe that your customer was entitled a refund that you did not provide, you can accept the dispute."
+msgstr "Prouvez que vous avez remboursé votre client par d’autres moyens ou que votre client n’a pas droit à un remboursement. Vous ne pouvez pas émettre de remboursement lorsqu’un paiement est contesté. Si vous pensez que votre client avait droit à un remboursement que vous n’avez pas fourni, vous pouvez accepter le litige."
+
+#: client/disputes/strings.ts:166
+msgid "It may be more efficient—and provide a better customer experience—to accept an accidental dispute and charge the customer again, if appropriate. Even when a dispute is withdrawn, it usually takes approximately 75 days to be finalized. Remember, it doesn’t matter to the card networks whether you win or lose a dispute; what matters is how many disputes a business receives, regardless of how many disputes are won."
+msgstr "Il peut être plus efficace, tout en assurant une meilleure expérience client, d’accepter un litige accidentel et de refacturer le client, au besoin. Même en cas d’annulation du litige, la finalisation de la procédure prend environ 75 jours. N’oubliez pas, que vous perdiez ou gagniez un litige n’a aucune importance pour les réseaux de cartes ; ce qui compte, c’est le nombre de litiges auxquels une entreprise est confrontée, indépendamment de leur issue."
+
+#: client/disputes/strings.ts:23
+msgid "The customer claims that the purchased product was returned or the transaction was otherwise canceled, but you have not yet provided a refund or credit."
+msgstr "Le client affirme que le produit acheté a été renvoyé ou que la transaction a été annulée, mais vous n’avez pas encore fourni de remboursement ou de crédit."
+
+#: client/disputes/strings.ts:165
+msgid "First, try to get in touch with your customer. Sometimes people forget about payments they make or don’t recognize the way they appear on their card statement. If this is the case, ask them to contact their card issuer and let them know they no longer dispute the transaction. Even if your customer agrees to withdraw the dispute, you must still submit appropriate evidence. Simply saying that your customer is going to withdraw the dispute is not sufficient evidence."
+msgstr "Tout d’abord, essayez de contacter votre client. Parfois, les gens oublient les paiements qu’ils effectuent ou ils ne les reconnaissent pas sur leur relevé de carte. Si c’est le cas, demandez-lui de contacter l’émetteur de sa carte et de lui faire savoir qu’il ne conteste plus la transaction. Même si votre client accepte de retirer le litige, vous devez toujours présenter des preuves appropriées. Le simple fait de dire que votre client va retirer le litige n’est pas une preuve suffisante."
+
+#: client/disputes/strings.ts:162
+msgid "Get your customer to withdraw the dispute by helping them identify the payment. Otherwise, challenge the dispute with appropriate evidence that proves the purchase was legitimate. "
+msgstr "Demandez à votre client de retirer le litige en l’aidant à identifier le paiement. Sinon, contestez le litige avec des preuves appropriées qui prouvent que l’achat était légitime. "
+
+#: client/disputes/strings.ts:159
+msgid "The customer doesn’t recognize the payment appearing on their card statement."
+msgstr "Le client ne reconnaît pas le paiement figurant sur son relevé de carte."
+
+#: client/disputes/strings.ts:155
+msgid "If you believe the dispute is invalid, you can challenge it by submitting the appropriate evidence using the response forms on the next screen."
+msgstr "Si vous pensez que le litige n’est pas valide, vous pouvez le contester en présentant les preuves appropriées en utilisant les formulaires de réponse sur l’écran suivant."
+
 #: client/disputes/strings.ts:153
 msgid "Unrecognized"
 msgstr "Non reconnu"
 
+#: client/disputes/strings.ts:148
+msgid "Otherwise, use the forms on the next screen to submit evidence that the subscription was still active and that the customer was aware of, and did not follow, your cancellation procedure."
+msgstr "Sinon, utilisez les formulaires sur l’écran suivant pour présenter les preuves que l’abonnement était toujours actif et que le client connaissait votre procédure d’annulation et ne l’a pas suivi."
+
+#: client/disputes/strings.ts:147
+msgid "Even if your customer agrees to withdraw the dispute, you must still submit appropriate evidence using the forms on the next screen. Simply saying that your customer is going to withdraw the dispute is not sufficient evidence."
+msgstr "Même si votre client accepte de retirer le litige, vous devez toujours présenter des preuves appropriées en utilisant les formulaires sur l’écran suivant. Le simple fait de dire que votre client va retirer le litige n’est pas une preuve suffisante."
+
+#: client/disputes/strings.ts:146
+msgid "First, get in touch with your customer. If you understand what they believe happened, there is a chance for you to explain the misunderstanding or to make it right. "
+msgstr "Tout d’abord, contactez votre client. Si vous comprenez sa version des faits, vous avez la possibilité d’expliquer le malentendu ou de le corriger. "
+
+#: client/disputes/strings.ts:143
+msgid "Prove that the subscription was still active and that the customer was aware of, and did not follow, your cancellation procedure."
+msgstr "Prouvez que l’abonnement était toujours actif et que le client connaissait votre procédure d’annulation et ne l’a pas suivi."
+
+#: client/disputes/strings.ts:140
+msgid "The customer claims that you continued to charge them after a subscription was canceled."
+msgstr "Le client affirme que vous avez continué à le facturer après l’annulation d’un abonnement."
+
+#: client/disputes/strings.ts:20
+msgid "If your customer was not refunded appropriately, you will need to accept the dispute, or resolve the issue with your customer. The credit card networks place liability for accepting disputed payments with you, the business."
+msgstr "Si votre client n’a pas été remboursé de manière appropriée, vous devrez accepter le litige ou résoudre le problème avec votre client. Les réseaux de cartes de crédit assument la responsabilité d’accepter les paiements litigieux avec vous, l’entreprise."
+
 #: client/disputes/strings.ts:134
 msgid "Subscription canceled"
 msgstr "Abonnement annulé"
+
+#: client/disputes/strings.ts:129
+msgid "If the customer withdraws their dispute you should still submit evidence using the forms on the next screen. Be sure to provide a letter or email from the cardholder stating that they are no longer in dispute."
+msgstr "Si le client retire son litige, vous devez toujours fournir des preuves en utilisant les formulaires sur l’écran suivant. Veillez à fournir une lettre ou un e-mail du titulaire de la carte indiquant qu’il n’est plus en litige."
+
+#: client/disputes/strings.ts:128
+msgid "If your customer made no attempt to return the product or cancel the service, or if you provided a replacement product or service, make sure to note that as well."
+msgstr "Si votre client n’a pas tenté de retourner le produit ou d’annuler le service, ou si vous avez fourni un produit ou un service de remplacement, veillez à le noter également."
+
+#: client/disputes/strings.ts:127
+msgid "For products that have been repaired or replaced, provide evidence that the cardholder agreed to a repair or replacement, it has been received by the customer, and the repair or replacement has not since been disputed."
+msgstr "Pour les produits qui ont été réparés ou remplacés, présentez la preuve que le titulaire de la carte a accepté une réparation ou un remplacement, qu’il a été reçu par le client, et que la réparation ou le remplacement n’a pas été contesté depuis."
+
+#: client/disputes/strings.ts:126
+msgid "If the customer has not yet returned the product or canceled the service, provide specific information to that effect. You should double-check your incoming shipping records to verify that you have not received a return before you respond. If you have processed a credit or reversal for this transaction, provide evidence of this which includes the amount and date processed."
+msgstr "Si le client n’a pas encore retourné le produit ou annulé le service, fournissez des informations spécifiques à cet effet. Vous devez revérifier vos registres d’expédition entrants pour vérifier que vous n’avez pas reçu de retour avant de répondre. Si vous avez traité un crédit ou une annulation pour cette transaction, présentez-en la preuve avec le montant et la date de traitement."
+
+#: client/disputes/strings.ts:125
+msgid "If the product or service is as described, provide specific information (invoice, contract, etc.) to refute the cardholder’s claims. Quality disputes are where the customer does not agree with the condition of merchandise or service received (e.g., a car repair situation or quality of a hotel room). There may be instances where you will need to obtain a neutral third-party opinion to help corroborate your claim against the cardholder. Provide as much specific information and documentation as possible to refute the cardholder’s claims. It is recommended that you address each point that the cardholder has made."
+msgstr "Si le produit ou le service est conforme à la description, fournissez des informations spécifiques (facture, contrat, etc.) pour réfuter les réclamations du titulaire de la carte. Les litiges de qualité sont les cas où le client n’est pas d’accord avec l’état de la marchandise ou du service reçu (par exemple, dans le cas d’une réparation de voiture ou la qualité d’une chambre d’hôtel). Dans certains cas, vous devrez peut-être obtenir l’avis d’un tiers neutre pour aider à corroborer votre réclamation contre le titulaire de la carte. Fournissez autant d’informations et de documents spécifiques que possible pour réfuter les réclamations du titulaire de la carte. Il est recommandé de répondre à chaque point soulevé par le titulaire de la carte."
+
+#: client/disputes/strings.ts:122
+msgid "Demonstrate that the product or service was delivered as described at the time of purchase."
+msgstr "Prouvez que le produit ou le service a été livré comme décrit au moment de l’achat."
+
+#: client/disputes/strings.ts:119
+msgid "The product or service was received but was defective, damaged, or not as described."
+msgstr "Le produit ou le service a été reçu mais était défaillant, endommagé ou non conforme à la description."
+
+#: client/disputes/strings.ts:116
+msgid "If you can not prove the customer received their product or service as described, you should accept the dispute. You cannot issue a refund while a payment is being disputed. The credit card networks place liability for accepting disputed payments with you, the business."
+msgstr "Si vous ne pouvez pas prouver que le client a reçu son produit ou service comme décrit, vous devez accepter le litige. Vous ne pouvez pas émettre de remboursement lorsqu’un paiement est contesté. Les réseaux de cartes de crédit assument la responsabilité d’accepter les paiements litigieux avec vous, l’entreprise."
 
 #: client/disputes/strings.ts:113
 msgid "Product unacceptable"
@@ -3871,6 +4056,22 @@ msgstr "Produit inacceptable"
 #: client/disputes/strings.ts:17
 msgid "Credit not processed"
 msgstr "Crédit non traité"
+
+#: client/disputes/strings.ts:107
+msgid "First, get in touch with your customer. Understanding why they filed the dispute will be important for helping make sure your customer gets the product and will give you critical information to prevent this from happening to others."
+msgstr "Tout d’abord, contactez votre client. Comprendre la nature du litige sera important pour vous assurer que votre client a reçu le produit et qu’il vous donnera les informations essentielles pour éviter que cela ne se produise avec d'autres."
+
+#: client/disputes/strings.ts:104
+msgid "Prove that the customer received a physical product or offline service, or made use of a digital product or online service. This must have occurred prior to the date the dispute was initiated."
+msgstr "Prouvez que le client a reçu un produit physique ou un service hors ligne, ou a utilisé un produit numérique ou un service en ligne. Cela doit avoir eu lieu avant la date de début du litige."
+
+#: client/disputes/strings.ts:101
+msgid "The customer claims they did not receive the products or services purchased."
+msgstr "Le client affirme qu’il n’a pas reçu les produits ou les services achetés."
+
+#: client/disputes/strings.ts:98
+msgid "If you can not prove the customer received their product or service, you should accept the dispute. You cannot issue a refund while a payment is being disputed. The credit card networks place liability for accepting disputed payments with you, the business."
+msgstr "Si vous ne pouvez pas prouver que le client a reçu son produit ou service, vous devez accepter le litige. Vous ne pouvez pas émettre de remboursement lorsqu’un paiement est contesté. Les réseaux de cartes de crédit assument la responsabilité d’accepter les paiements litigieux avec vous, l’entreprise."
 
 #: client/disputes/strings.ts:95
 msgid "Product not received"
@@ -3888,9 +4089,29 @@ msgstr "Chèque retourné"
 msgid "Incorrect account details"
 msgstr "Détails de compte incorrects"
 
+#: client/disputes/strings.ts:85
+msgid "This is an uncategorized dispute, so you should contact the customer for additional details to find out why the payment was disputed."
+msgstr "Il s’agit d’un litige non catégorisé, vous devez donc contacter le client pour obtenir des détails supplémentaires afin de savoir pourquoi le paiement a été contesté."
+
 #: client/disputes/strings.ts:11
 msgid "Bank cannot process"
 msgstr "La banque ne peut pas traiter"
+
+#: client/disputes/strings.ts:73
+msgid "Try to get in touch with your customer. Sometimes people forget about payments they make or don’t recognize the way they appear on their card statement. If this is the case, ask them to contact their card issuer and let them know they no longer dispute the transaction."
+msgstr "Essayez de contacter votre client. Parfois, les gens oublient les paiements qu’ils réalisent ou ils ne les reconnaissent pas sur leur relevé de carte. Si c’est le cas, demandez-lui de contacter l’émetteur de sa carte et de lui faire savoir qu’il ne conteste plus la transaction."
+
+#: client/disputes/strings.ts:70
+msgid "Provide adequate payment and order details so that a legitimate customer recognizes it, or proves to the card issuer that their cardholder authorized the transaction."
+msgstr "Fournissez les détails de paiement ou de commande adéquats afin qu’un client légitime le reconnaisse, ou prouve à l’émetteur de la carte que son titulaire a autorisé la transaction."
+
+#: client/disputes/strings.ts:67
+msgid "This is the most common reason for a dispute, and happens when a cardholder claims that they didn’t authorize the payment. This can happen if the card was lost or stolen and used to make an unauthorized transaction. It can also happen if the cardholder doesn’t recognize the payment as it appears on the billing statement from their card issuer."
+msgstr "Il s’agit de la raison la plus courante d’un litige, et se produit lorsqu’un titulaire de carte affirme qu’il n’a pas autorisé le paiement. Cela peut se produire si la carte a été perdue ou volée et utilisée pour effectuer une transaction non autorisée. Cela peut également se produire si le titulaire de la carte ne reconnaît pas le paiement tel qu’il apparaît sur le relevé de facturation de l’émetteur de sa carte."
+
+#: client/disputes/strings.ts:64
+msgid "If you believe the payment was actually made using a stolen credit card, you will need to accept the dispute. The credit card networks place liability for accepting unauthorized transactions with you, the business."
+msgstr "Si vous pensez que le paiement a vraiment été effectué avec une carte de crédit volée, vous devrez accepter le litige. Les réseaux de cartes de crédit assument la responsabilité d’accepter les transactions non autorisées avec vous, l’entreprise."
 
 #: client/transactions/list/index.tsx:94
 msgid "Transaction ID"
